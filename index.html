@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Api Nasa</title>
+
+</head>
+
+<body>
+  <main>
+    <div id="intro">
+      <div id="divImg">
+        <a href="https://apod.nasa.gov/apod/"><img id="logo-nasa"
+            src="https://logodownload.org/wp-content/uploads/2019/03/nasa-logo-0.png"></a>
+      </div>
+      <div id="titles">
+        <h1>Por favor, insira uma data para ver a imagem deste dia!</h1>
+      </div>
+    </div>
+
+    <div id="inputsandButtons">
+      <button id="previous" class="previousNext">Previous</button>
+      <div>
+        <label>Escolha uma Data</label>
+        <input id="inputDate" type="date" min="1995-06-16">
+      </div>
+      <button id="next" class="previousNext">Next</button>
+    </div>
+
+    <div id="containerButton"><button id="buttonGenerate" onclick="generateApod()"> Mostrar</button></div>
+
+    <div id="containerTitle"></div>
+    <div id="containerImgText"></div>
+
+    <span id="error"></span>
+
+  </main>
+
+  <footer>
+  
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
